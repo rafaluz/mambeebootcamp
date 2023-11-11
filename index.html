@@ -15,7 +15,7 @@
 
   <!-- header -->
   <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-dark navbar-expand-lg bg-body-tertiary">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img src="img/logo-mambee.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
@@ -28,16 +28,16 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#">INSCREVA-SE</a>
+              <a class="nav-link" href="#inscricao">INSCREVA-SE</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">SOBRE</a>
+              <a class="nav-link" href="#informacoes">SOBRE</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">AULAS</a>
+              <a class="nav-link" href="#aulas">AULAS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">PROFESSORES</a>
+              <a class="nav-link" href="#instrutores">PROFESSORES</a>
             </li>
 
           </ul>
@@ -49,7 +49,7 @@
   <!-- conteudo central -->
   <main>
     <!-- seção inicio -->
-    <section class="container-fluid" id="inicio">
+    <section class="container-fluid pt-5" id="inicio">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 col-md-12 d-flex flex-column justify-content-center">
@@ -57,7 +57,7 @@
             <p class="my-2">Aprenda, pratique e destaque-se no mercado com o MambeeBootcamp do IFPI.</p>
             <div class="row g-2">
               <div class="col-lg-6">
-                <a href="" class="btn btn-lg btn-primary w-100">INSCREVA-SE</a>
+                <a href="#inscricao" class="btn btn-lg btn-primary w-100">INSCREVA-SE</a>
               </div>
               <div class="col-lg-6">
                 <a href="" class="btn btn-lg btn-outline-primary w-100">ACESSAR EDITAL</a>
@@ -80,12 +80,12 @@
           <p>11 a 16 de Outubro de 2023</p>
         </div>
         <div class="col-md-4 col-sm-6 text-center">
-          <span class="icones"><i class="fa-solid fa-calendar"></i></span>
+          <span class="icones"><i class="fa-solid fa-users"></i></span>
           <h2>DIVULGAÇÃO DOS APROVADOS</h2>
           <p>17 de Outubro de 2023</p>
         </div>
         <div class="col-md-4 col-sm-12 text-center">
-          <span class="icones"><i class="fa-solid fa-calendar"></i></span>
+          <span class="icones"><i class="fa-solid fa-laptop"></i></span>
           <h2>PERÍODO DE AULAS</h2>
           <p>17/10 à 27 de Novembro de 2023</p>
         </div>
@@ -94,7 +94,7 @@
 
     <!-- seção sobre -->
     <section class="container" id="sobre">
-      <div class="row">
+      <div class="row mx-1">
         <div class="col-md-3 d-flex align-items-center">
           <h2>O que é o Mambee Bootcamp?</h2>
         </div>
@@ -111,17 +111,21 @@
     </section>
 
     <!-- seção para quem -->
-    <section class="container py-5" id="paraquem">
+    <section class="container" id="paraquem">
+      <div class="row">
+        <h1 class="tituloprincipal text-center primaria my-5">Para quem é o Bootcamp?</h1>
+      </div>
       <div class="row">
         <div class="col-md-6 d-flex justify-content-end colunaimg">
           <div class="quadrado-rosa"></div>
           <img src="img/alunos-mambee.jpg" alt="alunos da mambee" class="img-fluid rounded">
         </div>
         <div class="col-md-6 d-flex flex-column justify-content-center">
-          <p>30 Vagas para comunidade interna do IFPI (alunos, professores e técnicos) e comunidade externa (com ou sem
+          <p><span class="primaria">30 Vagas</span> para <span class="primaria">comunidade interna do IFPI</span>
+            (alunos, professores e técnicos) e <span class="primaria">comunidade externa</span> (com ou sem
             vínculo ativo em outras instituições de ensino).</p>
 
-          <p>Os candidatos deverão ter pelo menos um dos seguintes pré-requisitos:</p>
+          <p>Os candidatos deverão ter pelo menos um dos seguintes <span class="primaria">pré-requisitos</span>:</p>
 
           <ul>
             <li>Conhecimentos em Javascript;</li>
@@ -131,6 +135,143 @@
       </div>
     </section>
 
+    <!-- seção aulas -->
+    <section class="container" id="aulas">
+      <div class="row">
+        <h1 class="tituloprincipal text-center primaria my-5">O que você irá aprender?</h1>
+      </div>
+      <div class="row g-3">
+        <div class="col-lg-3 col-md-6">
+          <div class="card text-center h-100">
+            <div class="card-body">
+              <span class="icones"><i class="fa-brands fa-git-alt"></i></span>
+              <h5 class="card-title primaria">Git</h5>
+              <p class="card-text">Controle de versões utilizando a tecnologia mais popular do mercado</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card text-center h-100">
+            <div class="card-body">
+              <span class="icones"><i class="fa-brands fa-github"></i></span>
+              <h5 class="card-title primaria">Github</h5>
+              <p class="card-text">Trabalhe de forma colaborativa utilizando a melhor plataforma de hospedagem de
+                código-fonte.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card text-center h-100">
+            <div class="card-body">
+              <span class="icones"><i class="fa-brands fa-figma"></i></span>
+              <h5 class="card-title primaria">Figma</h5>
+              <p class="card-text">Aprenda a utilizar o editor gráfico de vetor e prototipagem de projetos de design</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card text-center h-100">
+            <div class="card-body">
+              <span class="icones"><i class="fa-brands fa-bootstrap"></i></span>
+              <h5 class="card-title primaria">Bootstrap</h5>
+              <p class="card-text">Desenvolva sites e aplicações Web utilizando um framework front-end</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- seção instrutores -->
+    <section id="instrutores" class="container-fluid pb-3">
+      <div class="container">
+        <div class="row mt-5">
+          <h1 class="tituloprincipal text-center primaria-invertida my-5">Com quem você vai aprender?</h1>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-6">
+            <div class="card">
+              <img src="img/professor-rafael.png" class="card-img-top" alt="Professor Rafael">
+              <div class="card-body">
+                <h3 class="card-title primaria-invertida mt-2">RAFAEL LUZ ARAÚJO</h3>
+                <h4 class="primariacard-subtitle my-2 primaria">Professor do IFPI</h4>
+                <p class="card-text mb-4">Possui graduação em Análise e Desenvolvimento de Sistemas pelo Instituto
+                  Federal do
+                  Piauí - Campus Picos (2016) e mestrado em Engenharia Elétrica pela Universidade Federal do Piauí
+                  (2021). Atualmente é professor de informática do Instituto Federal do Piauí. Possui experiência na
+                  área de Processamento Digital de Imagens, Reconhecimento de Padrões, Visão Computacional e
+                  Inteligência Computacional.</p>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card">
+              <img src="img/professor-jader.png" class="card-img-top" alt="Professor Jader">
+              <div class="card-body">
+                <h3 class="card-title primaria-invertida mt-2">JADER A. O. D. ABREU</h3>
+                <h4 class="primariacard-subtitle my-2 primaria">Professor do IFPI</h4>
+                <p class="card-text mb-4">Doutorando em Ciência da Computação pelo Centro de informática da UFPE.
+                  Tecnólogo em Análise e Desenvolvimento de sistemas pelo IFPI. Tem mais de 5 anos de experiência no
+                  mercado de software, sendo desenvolvedor de sistemas em java para planos de saúde na INFOWAY-PI e
+                  líder de projeto na Pigang IT no Porto Digital do Recife. Pesquisa principalmente nas áreas de
+                  interatividade e jogos aplicados à educação..</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- seção inscrição -->
+    <section id="inscricao" class="container-fluid py-5">
+      <div class="container">
+        <div class="row">
+          <h1 class="tituloprincipal text-center primaria-invertida my-5">Faça sua inscrição!</h1>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <h1 class="primaria-invertida"><span class="primaria">Inscreva-se</span> agora mesmo!</h1>
+            <p>Para realizar sua inscrição, preencha os dados a seguir:</p>
+          </div>
+          <div class="col-md-8">
+            <form class="row g-3">
+              <div class="col-lg-6">
+                <input type="text" class="form-control form-control-lg" id="inputNome" placeholder="Nome Completo">
+              </div>
+              <div class="col-lg-6">
+                <input type="text" class="form-control form-control-lg" id="inputTelefone" placeholder="Telefone">
+              </div>
+              <div class="col-md-12">
+                <input type="email" class="form-control form-control-lg" id="inputEmail" placeholder="Email">
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-lg btn-primary mb-3 w-100">Realizar Inscrição</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <hr class="linha my-5">
+      </div>
+    </section>
+
+    <footer class="container-fluid pb-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-4">
+            <div class="row text-center"><p>Organização</p></div>
+            <div class="row">
+              <div class="col-6"><img src="img/logo-mambee.png" alt="logormarca da mambee" class="w-100"></div>
+              <div class="col-6"><img src="img/logo-ifpi.png" alt="logormarca do ifpi" class="w-100"></div>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <p class="mt-5">© 2023. IFPI/MAMBEE. Todos os direitos reservados. Desenvolvido por <span class="primaria">Rafael Luz Araújo</span>.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
   </main>
 
