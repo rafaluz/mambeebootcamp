@@ -5,6 +5,8 @@
     --secundaria: #2E5868;
     --secundaria-clara: #54A6BD;
     --terciaria: #4C4C4C;
+    /* font-size: 62.5%;
+    font-family: 'Roboto', sans-serif; */
 }
 
 .primaria {
@@ -100,3 +102,58 @@ body {
     clear: both;
 } */
 
+/* section informações */
+
+#informacoes h2 {
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--terciaria);
+}
+
+#informacoes p {
+    /* font-size: 18px; */
+    color: var(--terciaria);
+}
+
+.icones {
+    font-size: 72px;
+    color: var(--primaria);
+}
+
+/* section sobre */
+
+#sobre .row {
+    background-color: var(--primaria);
+    border-radius: 8px;
+    padding: 30px;
+    color: #fff;
+}
+
+#sobre h2 {
+    font-size: 28px;
+    font-weight: 900;
+}
+
+/* section paraquem */
+
+#paraquem img {
+    /* text-align: right; */
+    width: 95%;
+}
+
+#paraquem .colunaimg {
+    position: relative;
+    margin-bottom: 10%;
+}
+
+.quadrado-rosa {
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    background-color: var(--primaria); /* Cor rosa */
+    left: 12px; /* Deslocamento para a esquerda */
+    top: 10%; /* Deslocamento para baixo */
+    border-radius: 8px;
+    z-index: -1;
+  }
