@@ -1,225 +1,223 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
+
 :root {
-    --primaria: #BD5471;
-    --secundaria: #2E5868;
-    --secundaria-clara: #54A6BD;
-    --terciaria: #4C4C4C;
-
-    /* font-size: 62.5%;
-    font-family: 'Roboto', sans-serif; */
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+     --primaria: #BD5471;
+     --secundaria: #2E5868;
+     --secundaria-clara: #54A6BD;
+     --terciaria: #4C4C4C;
 }
 
 .primaria {
-    color: var(--primaria);
-    font-weight: 900;
+     color: var(--primaria);
+     font-weight: bold;
 }
 
-.primaria-invertida {
-    color: #fff;
-    font-weight: 900;
-}
+/* .primaria-invertida {
+     color: #fff;
+     font-weight: bold;
+} */
 
 
-/* sobrescrevendo o bootstrap */
 
+/* sobrescrevendo cores do botao primario do bootstrap */
 .btn-primary {
-    --bs-btn-color: #fff;
-    --bs-btn-bg: var(--primaria);
-    --bs-btn-border-color: var(--primaria);
-    --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: var(--primaria);
-    --bs-btn-hover-border-color: var(--primaria);
-    --bs-btn-focus-shadow-rgb: 49, 132, 253;
-    --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: var(--primaria);
-    --bs-btn-active-border-color: var(--primaria);
-    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: #fff;
-    --bs-btn-disabled-bg: var(--primaria);
-    --bs-btn-disabled-border-color: var(--primaria);
+     --bs-btn-color: #fff;
+     --bs-btn-bg: var(--primaria);
+     --bs-btn-border-color: var(--primaria);
+     --bs-btn-hover-color: #fff;
+     --bs-btn-hover-bg: var(--primaria);
+     --bs-btn-hover-border-color: var(--primaria);
+     --bs-btn-focus-shadow-rgb: 49, 132, 253;
+     --bs-btn-active-color: #fff;
+     --bs-btn-active-bg: var(--primaria);
+     --bs-btn-active-border-color: var(--primaria);
+     --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+     --bs-btn-disabled-color: #fff;
+     --bs-btn-disabled-bg: var(--primaria);
+     --bs-btn-disabled-border-color: var(--primaria);
 }
+
 
 .btn-outline-primary {
-    --bs-btn-color: var(--primaria);
-    --bs-btn-border-color: var(--primaria);
-    --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: var(--primaria);
-    --bs-btn-hover-border-color: var(--primaria);
-    --bs-btn-focus-shadow-rgb: 13, 110, 253;
-    --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: var(--primaria);
-    --bs-btn-active-border-color: var(--primaria);
-    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: var(--primaria);
-    --bs-btn-disabled-bg: transparent;
-    --bs-btn-disabled-border-color: var(--primaria);
-    --bs-gradient: none;
+     --bs-btn-color: var(--primaria);
+     --bs-btn-border-color: var(--primaria);
+     --bs-btn-hover-color: #fff;
+     --bs-btn-hover-bg: var(--primaria);
+     --bs-btn-hover-border-color: var(--primaria);
+     --bs-btn-focus-shadow-rgb: 13, 110, 253;
+     --bs-btn-active-color: #fff;
+     --bs-btn-active-bg: var(--primaria);
+     --bs-btn-active-border-color: var(--primaria);
+     --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+     --bs-btn-disabled-color: var(--primaria);
+     --bs-btn-disabled-bg: transparent;
+     --bs-btn-disabled-border-color: var(--primaria);
+     --bs-gradient: none;
 }
+
+/* ------------------------------------ */
+body {
+     font-family: 'Roboto', sans-serif;
+     font-size: 18px;
+}
+
 
 
 /* header */
-
-/* header - sobrescrevendo bootstrap */
 .navbar,
 .nav-link,
 .navbar-brand {
-    background-color: var(--secundaria) !important;
-    color: #fff !important;
+     background-color: var(--secundaria) !important;
+     color: #fff !important;
 }
 
 .nav-link:hover {
-    color: var(--primaria) !important;
-    transition: 0.3s;
+     color: var(--primaria) !important;
+     transition: 0.3s;
 }
+
 
 .navbar-toggler,
 .navbar .navbar-toggler-icon {
-    color: var(--primaria) !important;
-    /* background-color: var(--primaria) !important; */
+     color: var(--primaria) !important;
+     /* background-color: var(--primaria) !important; */
 }
 
-/* section inicio */
+
+/* seção inicio */
 #inicio {
-    /* background: radial-gradient(circle at right, rgba(70,155,187,1) 2%, rgba(46,88,104,1) 37%); */
-    background: radial-gradient(circle at right, rgba(70, 155, 187, 1) 2%, var(--secundaria) 37%);
+     background-color: var(--secundaria);
+     color: #fff;
 }
 
 #inicio h1 {
-    color: #fff;
-    font-size: 38px;
-    font-weight: 700;
+     font-size: 38px;
 }
 
 #inicio p {
-    font-size: 24px;
-    color: var(--secundaria-clara);
+     font-size: 18px;
+     color: var(--secundaria-clara);
 }
 
-#inicio img {
-    background-attachment: fixed;
+#inicio svg path {
+     fill: var(--primaria)
 }
 
-/* section informações */
+/* seção informações */
 
 #informacoes h2 {
-    font-size: 18px;
-    font-weight: 900;
-    text-transform: uppercase;
-    color: var(--terciaria);
+     font-size: 18px;
+     color: var(--terciaria);
+     font-weight: 700;
 }
 
 #informacoes p {
-    color: var(--terciaria);
+     font-size: 18px;
+     color: var(--terciaria);
+     font-weight: 400;
 }
 
 .icones {
-    font-size: 72px;
-    color: var(--primaria);
+     color: var(--primaria);
+     font-size: 72px;
 }
 
-
-
-/* section sobre */
-
+/* seção sobre */
 #sobre .row {
-    background-color: var(--primaria);
-    border-radius: 8px;
-    padding: 30px;
-    color: #fff;
+     background-color: var(--primaria);
+     color: #fff;
 }
 
-#sobre h2 {
-    font-size: 28px;
-    font-weight: 900;
+/* seção paraquem */
+.tituloprincipal {
+     font-size: 28px;
+     font-weight: 700;
+     color: var(--primaria);
 }
-
-/* section paraquem */
 
 #paraquem img {
-    width: 95%;
+     width: 95%;
 }
 
 #paraquem .colunaimg {
-    position: relative;
-    margin-bottom: 10%;
+     position: relative;
+     margin-bottom: 10%;
 }
 
 .quadrado-rosa {
-    position: absolute;
-    width: 90%;
-    height: 100%;
-    background-color: var(--primaria);
-    left: 12px;
-    top: 10%;
-    border-radius: 8px;
-    z-index: -1;
+     position: absolute;
+     width: 90%;
+     height: 100%;
+     background-color: var(--primaria);
+     left: 12px;
+     top: 10%;
+     z-index: -1;
 }
 
-.tituloprincipal {
-    font-size: 28px;
-}
 
 /* seção aulas */
 
 #aulas .card:hover {
-    transform: scale(1.01);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
-    transition: 0.3s;
+     transform: scale(1.01);
+     box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+     transition: 0.3s;
 }
 
 /* seção instrutores */
 
+.tituloprincipal-invertido {
+     font-size: 28px;
+     font-weight: 700;
+     color: #fff;
+}
+
 #instrutores {
-    background-color: var(--primaria);
-    z-index: -1;
-    padding: 150px 0 0 0;
-    margin-top: -150px;
+     background-color: var(--primaria);
+     padding-top: 150px;
+     margin-top: -150px;
+     z-index: -1;
 }
 
 #instrutores .card {
-    border: var(--secundaria);
-    height: 60%;
+     border: var(--secundaria);
+     color: #fff;
+     /* max-height: 70%; */
 }
 
 #instrutores .card .card-img-top {
-    max-height: 70%;
-    object-fit: contain;
-    margin-top: -60px;
+     max-width: 60%;
+     /* max-height: 70%; */
+     object-fit: contain;
+     margin-top: -60px;
 }
 
 #instrutores .card .card-body {
-    background-color: var(--secundaria);
-}
+     background-color: var(--secundaria);
 
-#instrutores .card p {
-    color: #fff;
 }
 
 /* seção inscrição */
 #inscricao {
-    background-color: var(--secundaria);
-}
-
-#inscricao p {
-    color: #fff;
+     background-color: var(--secundaria);
+     color: #fff;
 }
 
 .linha {
-    background-color: var(--primaria);
-    height: 5px;
-    opacity: 100;
-    border-radius: 8px;
+     background-color: var(--primaria);
+     height: 5px;
+     opacity: 100;
+     border-radius: 8px;
 }
 
-/* footer */
+/* seção dúvidas */
+#duvidas {
+     background-color: var(--secundaria);
+}
+
+/* rodapé */
 
 footer {
-    background-color: var(--secundaria);
-    color: #fff;
+     background-color: var(--secundaria);
+     color: #fff;
 }
